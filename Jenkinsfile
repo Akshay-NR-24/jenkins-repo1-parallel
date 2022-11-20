@@ -18,7 +18,7 @@ pipeline{
         stage ('test on ff'){
           steps{
             echo "this is parallel to test in ff"
-            sh 'sleep 5
+            sh 'sleep 5'
           }
         }
       }
