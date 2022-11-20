@@ -5,9 +5,12 @@ pipeline{
   stages{
     stage ('build'){
       steps{
-        echo 
         echo "$Name"
-        sh 'sleep 5'
+        sh '''
+           sleep 5
+           echo $Name
+           exit 0
+           '''
            }
                    }
     stage ('test'){
